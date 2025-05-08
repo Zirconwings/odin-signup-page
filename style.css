@@ -20,7 +20,7 @@ body{
     margin: 0;
 }
 .description{
-    padding: 50px 50px 25px 70px;
+    padding: 50px 50px 25px 50px;
 }
 p{
     font-weight: bold;
@@ -59,10 +59,10 @@ form{
 .details{
     flex-direction: column;
     box-shadow: 0px 2px 6px lightgrey;
-    padding: 0px 650px 25px 70px;
+    padding: 0px 150px 25px 50px;
 }
 .details>div{
-    flex-direction: row;
+    flex-direction:row;
     margin-right:30px;
     flex-wrap: wrap;
 
@@ -72,12 +72,44 @@ form{
     margin:0 30px 30px 0;
 }
 button{
-    margin: 50px 50px 25px 70px;
+    margin: 30px 50px;
+    height: 50px;
+    width: 240px;
+    color: white;
+    background-color: #596d48;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 17px;
+    font-weight: bold;
+    box-shadow: 3px 5px 6px lightgrey;
+    margin-bottom: 20px;
+    
 }
 label{
     font-size: 15px;
 }
 input{
-    height: 20px;
+    height: 25px;
     width: 250px;
+    border-radius: 6px;
+    border-color: lightgrey;
+    border-style: solid;
+}
+input:focus{
+    outline-color: blue;
+}
+input:valid{
+    border-color: green;
+}
+#password:invalid, #confirm:invalid{
+    border-color: red;
+}
+.login{
+    font-weight: initial;
+    font-size: initial;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 50px;
+}
+a{
+    color: #596d48;
 }
